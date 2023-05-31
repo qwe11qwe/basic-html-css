@@ -1,1 +1,24 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>폼 관련 요소</title>
+</head>
+<body>
+  <h1>폼 관련 요소</h1>
+  <form action="https://formspree.io/seulbinim@gmail.com" method="post">
+    <!-- fieldset 과 legend  요즘은 안 사용함 -->
+    <!-- label 과 input 세트라서 div로 묶어서 사용 -->
+    <fieldset>
+      <legend>검색</legend>
+      <div>
+      <label for="search">자료검색</label>
+      <!-- maxlength 글자수 제한 // minlength 글자 최소 제한-->
+      <input id="search" type="text" maxlength="10" minlength="6" placeholder="아이디"/> 
+    </div>
+    </fieldset>
+
+</body>
+</html>
