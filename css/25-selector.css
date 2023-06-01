@@ -5,6 +5,12 @@
   *color: inherit;
 }
 
+/* 가상 요소 선택자 */
+::selection {
+  background: #373e6a;
+  color: hotpink;
+}
+
 /* 태그 선택자 */
 body {
   font-family: "SUIT";
@@ -20,8 +26,12 @@ body {
   text-shadow: 4px 4px 3px #77f;
 }
 
+.align {
+  text-align: center;
+}
+
 /* margin 안쪽 여백 // padding-left 바깥쪽 여백 */
-ul.menu{
+ul.menu {
 	margin: 0;
 	padding-left: 0;
   color: #f00;
@@ -30,4 +40,37 @@ ul.menu{
 /* 아이디 선택자 */
 #demo {
   border: red 10px solid;
+}
+
+/* 속성 선택자 */
+.menu a[href$="html"] {
+  background-color: rebeccapurple;
+}
+
+/* 선택자 목록 */
+.fancy, 
+.menu {
+  font-size: 20px;
+}
+
+/* 가상 요소 선택자 */
+.align::before{
+  content: "다음 요소";
+}
+
+.align::after{
+  content: "이전 요소";
+}
+
+/* 가상 클래스 */
+.menu a:nth-child(odd){
+ color: yellow;
+}
+
+.menu a:hover{
+  border: 5px solid red;
+}
+
+h1.menu:hover{
+  background-color: green;
 }
